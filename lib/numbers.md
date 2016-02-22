@@ -5,20 +5,45 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 # What are the different kinds of numbers in Ruby?
 
-Replace me with your response...
-
+There are 2 types of numbers in Ruby. First is "integers" aka "fixnums'. These are whole numbers that do not contain any decimals. 
+     EX. 2,3,6,46,1251,-555,-20
+The 2nd type of numbers are "floats". These are numbers that do contain decimals.
+     EX. 1.0, 5.9792, 9.001, -8.74
+    
+    
+    
 # What are some common operations and comparisons you would perform on numbers?
+Addition using the "+" operator. Simply adds two numbers together.
+     EX     2+3 = 5
+Subtraction using the "-" operator. Simply subtracts one number from the other.
+     EX     3-2 = 1
+Multiplication using the "*" operator. Multiplies one number by the other.           
+     EX     3*2 = 6
+Division using the "/" operator. Divides one number by the other.                    
+     EX     3/2 = 1.5
+Raising to the power of using the "**" operaator. Raises one number to the power of the other. 
+     EX     3**2 = 9
+Finding the Remainder using the "%" modulo operator. Divides one number by the other and returns the remainder.
+     EX     3%2 = 1
 
-Replace me with your response...
+
 
 # What is the difference between the `+` operation on a number versus on a String?
 
-Replace me with your response...
+The "+" operation on a string will concatenate the strings together, but will not alter the original strings, resulting in more memory taken up than just using the "<<" concat operator. EX   "This is a "  +  "string"   = "This is a string"
+
+The "+" operation on numbers will add the two numbers together. EX 2 + 3 + 9 = 14
+
+
 
 # If you have a _String_ `"20"` and want to perform a mathematical operation (like division or multiplication) on it, will it work? If yes, why? If not, how would you make it work?
 
-Replace me with your response...
+No, mathematical operations will only work on floats or integers. If a numerical number is contained inside of a string. We can use the ".to_i" or ".to_f" methods to convert it to a number. At this point, we can go ahead and use a mathematical operator on it. 
 
 # What is the purpose of the `times` operation? Is that the same as `*`?
 
-Replace me with your response...
+".times" is an iterator function in Ruby that allows us to repeat expressions multiple times.
+   EX    3.times {print "Peanutbutter jelly time! "}   > Peanutbutter jelly time! Peanutbutter jelly time! Peanutbutter jelly time! 
+
+The "*" operator is used with numbers to multiply the by each other.
+   EX     7*8 = 56
